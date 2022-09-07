@@ -1,13 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
-import HomeScreen from "./Components/homeScreen/HomeScreen";
-
+import Login from "./Components/login/Login";
+import { Route, Routes } from "react-router-dom";
+import Dashboard from "./Components/dashboard/Dashboard";
 function App() {
   return (
     <>
       <div className="App">
         <div>
-          <HomeScreen/>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/dash" element={<Dashboard />}></Route>
+          </Routes>
         </div>
       </div>
     </>
