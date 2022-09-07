@@ -1,7 +1,14 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { setShowSplitView } from "../redux/actions/actions";
+import SplitView from "../splitView/SplitView";
 import "./Header.css";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const openSplitView = () => {
+    dispatch(setShowSplitView(true));
+  };
   return (
     <>
       <div className="header">
@@ -11,21 +18,23 @@ const Header = () => {
             <div className="px-2">icon</div>
             <div className="px-2">icon</div>
             <div className="px-2">
-              <button className="split-button">split view</button>
+              <button className="split-button" onClick={openSplitView}>
+                split view
+              </button>
             </div>
           </div>
         </div>
         <div className="header-bottom">
           <ul>
-            <li class="tab tabSelected">
+            <li className="tab tabSelected">
               <a href="#">Tab 1</a>
-              <a class="closeTab" href="">
+              <a className="closeTab" href="">
                 ✕
               </a>
             </li>
-            {/* <li class="tab selected">
+            {/* <li className="tab selected">
               <a href="#">Tab 2</a>
-              <a class="closeTab" href="">
+              <a className="closeTab" href="">
                 ✕
               </a>
             </li> */}
@@ -33,7 +42,9 @@ const Header = () => {
           </ul>
         </div>
       </div>
+      <SplitView/>
     </>
+  
   );
 };
 

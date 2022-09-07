@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
+import SplitView from "../splitView/SplitView";
 import ViewScreenMain from "../viewScreenMain/viewScreenMain";
 
 import "./Dashboard.css";
@@ -12,10 +13,11 @@ const Dashboard = () => {
           <Header />
         </div>
         <div>
+          {/* <SplitView/> */}
           <ViewScreenMain />
         </div>
         <div>
-            <Footer/>
+          <Footer />
         </div>
       </div>
     </>

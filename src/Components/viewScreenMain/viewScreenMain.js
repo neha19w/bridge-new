@@ -37,6 +37,7 @@ const ViewScreenMain = () => {
           </div>
         </div>
       </div>
+    
     </>
   );
 };
