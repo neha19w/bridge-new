@@ -14,20 +14,14 @@ const ViewScreenMain = () => {
                     <tr id="feed-row">
                       <td className="lineNo px-2" id="lineNumber">
                         1/3
-                        <br />
-                        1/3
                       </td>
                       <td className="timecode" id="timeCode">
-                        09:57:33
-                        <br />
                         09:57:33
                       </td>
                       {/* <td className="line-annotation">
                         <button id="markLine" className="hide-mark"></button>
                       </td> */}
                       <td className="text" id="feedText">
-                        the brief demonstration will allow you to
-                        <br />
                         the brief demonstration will allow you to
                       </td>
                     </tr>
@@ -38,9 +32,7 @@ const ViewScreenMain = () => {
           </div>
         </div>
         <div className="viewRight col-2">
-          <div
-            className="d-flex justify-content-end"
-          >
+          <div className="d-flex justify-content-end">
             <label>icon</label>
           </div>
         </div>
